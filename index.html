@@ -34,7 +34,7 @@ encontrar por google-->
     <body>
         <div class="container-fluid">
             <div class="header">
-                <h1 class="logo">🐦 falcon </h1>
+                <h1 class="header__logo">🐦 falcon </h1>
 
                 <!-- Barra de busqueda -->
                 <input type="text" class="search-bar" placeholder="🔍 Search..">
@@ -66,17 +66,17 @@ encontrar por google-->
                 </nav>
             </div>
 
-            <div class="row">
+            <div class="row main">
                 <div class="col-3">
                     <!-- Este es el Menu del lado -->
-                    <div class="sidebar" style="background-color: blueviolet;">
+                    <div class="main__sidebar">
                         <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i
                                         class="bi bi-pie-chart-fill"></i> Dashboard</a>
                             </li>
                             <li class="nav-item">
-                                <p id="Edges">App_________________________</p>
+                                <p class="main__edges">App_________________________</p>
                                 <a class="nav-link" href="#"><i
                                         class="fa-solid fa-calendar"></i> Calendar</a>
                             </li>
@@ -109,7 +109,7 @@ encontrar por google-->
                                 <a class="nav-link" href="#"><i class="bi bi-ticket-detailed-fill"></i> Support Desk</a>
                             </li>
                             <li class="nav-item">
-                                <p id="Edges">Pages_________________________</p>
+                                <p class="main__edges">Pages_________________________</p>
                                 <a class="nav-link" href="#"><i class="bi bi-flag-fill"></i> Starter</a>
                             </li>
                             <li class="nav-item">
@@ -134,7 +134,7 @@ encontrar por google-->
                                 <a class="nav-link" href="#"><i class="bi bi-pin-fill"></i> Miscellaneous</a>
                             </li>
                             <li class="nav-item">
-                                <p id="Edges">Modulos_________________________</p>
+                                <p class="main__edges">Modules_________________________</p>
                                 <a class="nav-link" href="#"><i class="fa-solid fa-file-invoice"></i> Forms</a>
                             </li>
                         </ul>
@@ -143,9 +143,9 @@ encontrar por google-->
                 </div>
 
                 <!-- Cuadro sobre las cajas -->
-                <div class="col-9" id="BoxSpaces">
+                <div class="col-9 main__box-spaces">
                     <!-- Alineado a la izquierda -->
-                    <div class="row" id="UpBar">
+                    <div class="row main__up-bar">
                         <div class="col-2">
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">1</option>
@@ -180,7 +180,7 @@ encontrar por google-->
 
                     </div>
                     <!-- Caja Separadora Mala Practica -->
-                    <div class="row" id="Spacer"></div>
+                    <div class="row main__spacer"></div>
 
 
                     <!-- Aqui empiezan los productos y sus cajas -->
@@ -189,15 +189,15 @@ encontrar por google-->
                         <!-- Primer Producto -->
                         <div class="row">
                             <div class="col-4">
-                                <div class="product-image">📦</div>
+                                <div class="product-image"><img src="./resources/logitech.jfif" alt=""></div>
                             </div>
                             <div class="col-4">
-                                <h2 class="product-name">💻 Laptop</h2>
+                                <h2 class="product-name">💻 Logitech G305 Gaming Mouse</h2>
                             </div>
                             <div class="col-4">
                                 <div class="product-specifications">
                                     <div class="row specification">
-                                        <span class="product-price" style="background-color: orange;">💻 $1999</span>
+                                        <span class="product-price">💻 $1999</span>
                                     </div>
                                     <div class="row specification">
                                         <span class="specification">$95 50%</span>
@@ -209,16 +209,16 @@ encontrar por google-->
                                     <div class="row specification">
                                         <span class="specification">Shipping Cost: $20</span>
                                     </div>
-                                    <div class="row specification">
-                                        <span class="specification">Stock : <i style="background-color: green;">Available</i></span>
+                                    <div class="row main__availibility">
+                                        <span class="specification">Stock : <i>Available</i></span>
                                     </div>
 
                                     <!-- Los botones -->
                                     <div class="row specification">
-                                        <button>Añadir al carrito</button>
+                                        <button class="main__specification--favourite">Favourite</button>
                                     </div>
                                     <div class="row specification">
-                                        <button style="background-color: blue;">Comprar</button>
+                                        <button  class="main__specification--cart">Add to Cart</button>
                                     </div>
         
                                 </div>
@@ -230,15 +230,15 @@ encontrar por google-->
                         <!-- Segundo Producto -->
                         <div class="row">
                             <div class="col-4">
-                                <div class="product-image">📦</div>
+                                <div class="product-image"><img src="./resources/apple.png" alt=""></div>
                             </div>
                             <div class="col-4">
-                                <h2 class="product-name">💻 Gaming Mouse</h2>
+                                <h2 class="product-name">💻 Apple Watch Series 4 44mm GPS Only</h2>
                             </div>
                             <div class="col-4">
                                 <div class="product-specifications">
                                     <div class="row specification">
-                                        <span class="product-price" style="background-color: orange;">💻 $1999</span>
+                                        <span class="product-price">💻 $1999</span>
                                     </div>
                                     <div class="row specification">
                                         <span class="specification">$95 50%</span>
@@ -251,15 +251,15 @@ encontrar por google-->
                                         <span class="specification">Shipping Cost: $20</span>
                                     </div>
                                     <div class="row specification">
-                                        <span class="specification">Stock : <i style="background-color: green;">Available</i></span>
+                                        <span class="specification">Stock : <i>Available</i></span>
                                     </div>
 
                                     <!-- Los botones -->
                                     <div class="row specification">
-                                        <button>Añadir al carrito</button>
+                                        <button class="main__specification--favourite">Favourite</button>
                                     </div>
                                     <div class="row specification">
-                                        <button style="background-color: blue;">Comprar</button>
+                                        <button  class="main__specification--cart">Add to Cart</button>
                                     </div>
         
                                 </div>
@@ -269,15 +269,15 @@ encontrar por google-->
                         <!-- Tercer Producto -->
                         <div class="row">
                             <div class="col-4">
-                                <div class="product-image">📦</div>
+                                <div class="product-image"><img src="./resources/canon.jfif" alt=""></div>
                             </div>
                             <div class="col-4">
-                                <h2 class="product-name">💻 Gaming Mouse</h2>
+                                <h2 class="product-name">💻 Canon Standard Zoom Lens</h2>
                             </div>
                             <div class="col-4">
                                 <div class="product-specifications">
                                     <div class="row specification">
-                                        <span class="product-price" style="background-color: orange;">💻 $1999</span>
+                                        <span class="product-price">💻 $1999</span>
                                     </div>
                                     <div class="row specification">
                                         <span class="specification">$95 50%</span>
@@ -290,15 +290,15 @@ encontrar por google-->
                                         <span class="specification">Shipping Cost: $20</span>
                                     </div>
                                     <div class="row specification">
-                                        <span class="specification">Stock : <i style="background-color: green;">Available</i></span>
+                                        <span class="specification">Stock : <i>Available</i></span>
                                     </div>
 
                                     <!-- Los botones -->
                                     <div class="row specification">
-                                        <button>Añadir al carrito</button>
+                                        <button class="main__specification--favourite">Favourite</button>
                                     </div>
                                     <div class="row specification">
-                                        <button style="background-color: blue;">Comprar</button>
+                                        <button  class="main__specification--cart">Add to Cart</button>
                                     </div>
         
                                 </div>
