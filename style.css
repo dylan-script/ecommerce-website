@@ -76,6 +76,8 @@ body {
   height: 20px;
 }
 
+/* PRODUCTS BOXES */
+
 .product-grid {
   width: 80%;
   display: grid;
@@ -119,8 +121,23 @@ body {
 
 .product-price {
   font-size: 1.2em;
-  color: #343a40;
+  color: #f5b811;
 }
+
+.main__specification--favourite{
+  background-color: white;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.main__specification--cart{
+  background-color: rgb(8, 119, 223);
+  color: white;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+
 
 .footer {
   position: fixed;
