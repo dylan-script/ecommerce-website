@@ -44,11 +44,14 @@ encontrar por google-->
           <nav class="navbar">
             <!-- Toggle Collapse -->
             <div class="toggle-icon-wrapper me-md-3 me-2 d-xl-none navbar-toggler collapsed">
-              <button class="navbar-toggler-humburger-icon btn btn-link d-flex flex-center">
-                <span class="navbar-toggle-icon">
-                  <span class="toggle-line"></span>
-                </span>
-              </button>
+              <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#side_bar" 
+              aria-controls="side_bar" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation"></button>
             </div>
             <!-- Logo -->
             <a href="" class="text-decoration-none text-left logo">
@@ -99,8 +102,8 @@ encontrar por google-->
             </ul>
           </nav>
 
-          <div class="row">
-            <div class="col-3">
+          <section class="section row">
+            <div class="collapse collapse-horizontal col-3" id="side_bar">
               <!-- Este es el Menu del lado -->
               <div class="main__sidebar">
                 <ul class="nav flex-column">
@@ -427,7 +430,7 @@ encontrar por google-->
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </main>
