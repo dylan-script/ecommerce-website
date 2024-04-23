@@ -34,36 +34,50 @@ encontrar por google-->
     <body>
         <div class="container-fluid">
             <div class="header">
-                <h1 class="header__logo">🐦 falcon </h1>
 
-                <!-- Barra de busqueda -->
-                <input type="text" class="search-bar" placeholder="🔍 Search..">
+                <div class="lefties">
+                    <img src="resources/Hamburger_icon.svg.png" alt="" class="hamburger">
 
+                    <img src="resources/falconLogo.png" alt="" class="header__Logo">
+                </div>
+                
+                <div class="middle">
+                    <!-- Barra de busqueda -->
+                    <input type="text" class="search-bar" placeholder="Search...">
+                </div>
 
-                <nav class="nav">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#"><i
-                                    class="bi bi-moon-fill"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i
-                                    class="fa-solid fa-cart-shopping"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i
-                                    class="bi bi-bell-fill"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i
-                                    class="bi bi-grid-3x3-gap-fill"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i
-                                    class="bi bi-person-circle"></i></a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="rigthies">
+                    <!-- NavBar -Iconos de la derecha  -->
+                    <nav class="nav">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"><i
+                                        class="bi bi-moon-fill"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i
+                                        class="bi bi-bell-fill"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i
+                                        class="bi bi-grid-3x3-gap-fill"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i
+                                        class="bi bi-person-circle"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                
+                
+
             </div>
 
             <div class="row main">
@@ -146,7 +160,7 @@ encontrar por google-->
                 <div class="col-9 main__box-spaces">
                     <!-- Alineado a la izquierda -->
                     <div class="row main__up-bar">
-                        <div class="col-2">
+                        <div class="col-2 selected">
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -158,24 +172,29 @@ encontrar por google-->
 
                         </div>
                     
-                        <div class="col-3">
-                            <p>Showing a 1-6 products</p>
+                        <div class="col-3 letters">
+                            <p>Showing a 1-6 products of 9 products</p>
                         </div>
 
                         <!-- MALA PRACTICA NO HAGA ESTO -->
-                        <div class="col-4">
-                        </div>
+                        <div class="col-3">
+                        </div> 
 
                     <!-- Alineado a la izquierda -->
-                        <div class="col-1">
-                            <p>Soft by</p>
+                        <div class="col-1 little">
+                            <p>Soft by :</p>
                         </div>
 
-                        <div class="col-2">
+                        <div class="col-2 selected">
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">price</option>
                                 <option value="2">name</option> 
                             </select>
+                        </div>
+                        <!-- Icons -->
+                        <div class="col-1 icons">
+                            <i class="bi bi-search"></i>
+                            <i class="fa-solid fa-file-invoice"></i>
                         </div>
 
                     </div>
@@ -184,43 +203,48 @@ encontrar por google-->
 
 
                     <!-- Aqui empiezan los productos y sus cajas -->
-                    <div class="container-fluid">
+                    <div class="row__boxes">
                         
                         <!-- Primer Producto -->
                         <div class="row">
                             <div class="col-4">
                                 <div class="product-image"><img src="./resources/logitech.jfif" alt=""></div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-5">
                                 <h2 class="product-name">💻 Logitech G305 Gaming Mouse</h2>
                                 <span class="product-category">Technology and gadgets</span>
                             </div>
                             
-                            <div class="col-4">
+                            <div class="col-3">
                                 <div class="product-specifications">
                                     <div class="row specification">
                                         <span class="product-price">$1999</span>
                                     </div>
-                                    
+                        
                                     <div class="row specification">
-                                        <span class="specification"> <s>$95</s> 50%</span>
+                                        <span class="specification-promo"> <s>$95</s> 50%</span>
                                     </div>
                                     
-                                    <div class="row specification">
-                                        <span class="specification">estrellas</span>
+                                    <div class="row specification stars">
+                                        <img src="resources/stars-remove.png" alt="">
                                     </div>
 
                                     <div class="row specification">
-                                        <span class="specification">Shipping Cost: <b>$20</b></span>
+                                        <span class="specification-shipping">Shipping Cost: <b>$20</b></span>
                                     </div>
 
                                     <div class="row main__availibility">
-                                        <span class="specification">Stock : <i>Available</i></span>
+                                        <span class="specification-stock">Stock : <i>Available</i></span>
                                     </div>
 
                                     <!-- Los botones -->
                                     <div class="row specification">
                                         <button class="main__specification--favourite">🤍Favourite</button>
+                                    </div>
+
+                                    <!-- MALA PRACTICA -->
+                                    <div class="separate">
+
                                     </div>
 
                                     <div class="row specification">
@@ -238,36 +262,41 @@ encontrar por google-->
                             <div class="col-4">
                                 <div class="product-image"><img src="./resources/logitech.jfif" alt=""></div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-5">
                                 <h2 class="product-name">💻 Logitech G305 Gaming Mouse</h2>
                                 <span class="product-category">Technology and gadgets</span>
                             </div>
                             
-                            <div class="col-4">
+                            <div class="col-3">
                                 <div class="product-specifications">
                                     <div class="row specification">
                                         <span class="product-price">$1999</span>
                                     </div>
-                                    
+                        
                                     <div class="row specification">
-                                        <span class="specification"> <s>$95</s> 50%</span>
+                                        <span class="specification-promo"> <s>$95</s> 50%</span>
                                     </div>
                                     
-                                    <div class="row specification">
-                                        <span class="specification">estrellas</span>
+                                    <div class="row specification stars">
+                                        <img src="resources/stars-remove.png" alt="">
                                     </div>
 
                                     <div class="row specification">
-                                        <span class="specification">Shipping Cost: <b>$20</b></span>
+                                        <span class="specification-shipping">Shipping Cost: <b>$20</b></span>
                                     </div>
 
                                     <div class="row main__availibility">
-                                        <span class="specification">Stock : <i>Available</i></span>
+                                        <span class="specification-stock">Stock : <i>Available</i></span>
                                     </div>
 
                                     <!-- Los botones -->
                                     <div class="row specification">
                                         <button class="main__specification--favourite">🤍Favourite</button>
+                                    </div>
+
+                                    <!-- MALA PRACTICA -->
+                                    <div class="separate">
+
                                     </div>
 
                                     <div class="row specification">
@@ -285,36 +314,41 @@ encontrar por google-->
                             <div class="col-4">
                                 <div class="product-image"><img src="./resources/logitech.jfif" alt=""></div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-5">
                                 <h2 class="product-name">💻 Logitech G305 Gaming Mouse</h2>
                                 <span class="product-category">Technology and gadgets</span>
                             </div>
                             
-                            <div class="col-4">
+                            <div class="col-3">
                                 <div class="product-specifications">
                                     <div class="row specification">
                                         <span class="product-price">$1999</span>
                                     </div>
-                                    
+                        
                                     <div class="row specification">
-                                        <span class="specification"> <s>$95</s> 50%</span>
+                                        <span class="specification-promo"> <s>$95</s> 50%</span>
                                     </div>
                                     
-                                    <div class="row specification">
-                                        <span class="specification">estrellas</span>
+                                    <div class="row specification stars">
+                                        <img src="resources/stars-remove.png" alt="">
                                     </div>
 
                                     <div class="row specification">
-                                        <span class="specification">Shipping Cost: <b>$20</b></span>
+                                        <span class="specification-shipping">Shipping Cost: <b>$20</b></span>
                                     </div>
 
                                     <div class="row main__availibility">
-                                        <span class="specification">Stock : <i>Available</i></span>
+                                        <span class="specification-stock">Stock : <i>Available</i></span>
                                     </div>
 
                                     <!-- Los botones -->
                                     <div class="row specification">
                                         <button class="main__specification--favourite">🤍Favourite</button>
+                                    </div>
+
+                                    <!-- MALA PRACTICA -->
+                                    <div class="separate">
+
                                     </div>
 
                                     <div class="row specification">
